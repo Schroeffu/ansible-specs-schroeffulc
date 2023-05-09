@@ -1,0 +1,17 @@
+---
+
+potos_apt_key:
+  microsoft-packages:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    filename: microsoft-packages
+  chrome-signing-key:
+    url: https://dl.google.com/linux/linux_signing_key.pub
+    filename: chrome-signing-key
+    
+potos_apt_repository:
+  edge:
+    filename: microsoft-edge
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/edge/ stable main
+
+potos_apt_packages:
+  - microsoft-edge-stable
